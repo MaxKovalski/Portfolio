@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.change-text {
+  font-family: "Bruno Ace SC", cursive;
+}
+/*
+#222831 dark grey
+#393E46 grey
+#FFD369 yellow
+#EEEEEE white */
+body {
+  background-color: #222831;
+  font-family: "Poppins", sans-serif;
+  color: #eeeeee;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo {
+  font-size: 25px;
+  color: #ffd369;
+  text-decoration: none;
+  font-weight: 600;
+}
+.navbar a {
+  font-size: 18px;
+  color: #eeeeee;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+}
+.navbar a:hover,
+.navbar a.active {
+  color: #ffd369;
+}
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  background: url(./Images/background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.home-content h1 {
+  color: #ffd369;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.home-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.home-content p {
+  font-size: 16px;
+  margin: 20px 0 20px;
+}
+.home-content .hire-me {
+  display: flex;
+  justify-content: space-between;
+  width: 345px;
+  height: 50px;
+}
+.hire-me a {
+  position: relative;
+  display: inline-flex;
+  width: 150px;
+  height: 100%;
+  color: #393e46;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffd369;
+  border: 2px solid #ffd369;
+  border-radius: 8px;
+  font-size: 19px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.hire-me a:hover {
+  color: #ffd369;
+}
+.hire-me a:nth-child(2) {
+  background-color: transparent;
+  color: #ffd369;
+}
+.hire-me a:nth-child(2)::before {
+  background: #ffd369;
+}
+.hire-me a:nth-child(2):hover {
+  background-color: #393e46;
+  color: #393e46;
+}
+.hire-me a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #101820ff;
+  z-index: -1;
+  transition: 0.5s;
+}
+.hire-me a:hover::before {
+  width: 100%;
+}
