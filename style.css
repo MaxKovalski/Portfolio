@@ -30,63 +30,192 @@ body {
   z-index: 100;
 }
 .logo {
+  position: relative;
   font-size: 25px;
-  color: #ffd369;
+  color: #eeeeee;
   text-decoration: none;
   font-weight: 600;
 }
+.logo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #222831;
+  animation: slideRight 1s ease forwards;
+  animation-delay: 0.4s;
+}
+@keyframes slideRight {
+  100% {
+    width: 0;
+  }
+}
+
 .navbar a {
-  font-size: 18px;
+  position: relative;
+  font-size: 14px;
   color: #eeeeee;
   text-decoration: none;
   font-weight: 500;
   margin-left: 35px;
+  transition: 0.5s;
 }
 .navbar a:hover,
 .navbar a.active {
   color: #ffd369;
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #222831;
+  animation: slideRight 1s ease forwards;
+  animation-delay: 0.4s;
+}
+.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.navbar a::after:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+.bar:nth-child(1) {
+  background-color: #ffd369;
+}
+.bar:nth-child(3) {
+  background-color: #ffd369;
+}
+
 .home {
   height: 100vh;
   display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
   align-items: center;
   padding: 0 10%;
-  background: url(./Images/background.jpg) no-repeat;
+  background-color: #222831;
   background-size: cover;
   background-position: center;
 }
+img {
+  width: 300px;
+  height: 300px;
+  opacity: 0.3;
+}
+/* IMG HERE */
+
 .home-content h1 {
+  position: relative;
   color: #ffd369;
-  font-size: 56px;
+  font-size: 40px;
   font-weight: 700;
   line-height: 1.2;
 }
+.home-content h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #222831;
+  animation: slideRight 1s ease forwards;
+  animation-delay: 1s;
+}
 .home-content h3 {
-  font-size: 32px;
+  position: relative;
+  font-size: 25px;
   font-weight: 700;
 }
+.change-text {
+  font-size: 23px;
+}
+.home-content h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #222831;
+  animation: slideRight 1s ease forwards;
+  animation-delay: 1.3s;
+}
 .home-content p {
-  font-size: 16px;
+  position: relative;
+  font-size: 13px;
   margin: 20px 0 20px;
 }
+.home-content p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #222831;
+  animation: slideRight 1s ease forwards;
+  animation-delay: 1.6s;
+}
 .home-content .hire-me {
+  position: relative;
   display: flex;
-  justify-content: space-between;
+
   width: 345px;
   height: 50px;
+}
+.home-content .hire-me::before {
+  content: "";
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #222831;
+  animation: slideRight 1s ease forwards;
+  animation-delay: 1.8s;
 }
 .hire-me a {
   position: relative;
   display: inline-flex;
-  width: 150px;
-  height: 100%;
+  width: 120px;
+  height: 40px;
   color: #393e46;
   justify-content: center;
   align-items: center;
   background-color: #ffd369;
   border: 2px solid #ffd369;
   border-radius: 8px;
-  font-size: 19px;
+  font-size: 12px;
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 1px;
@@ -121,4 +250,52 @@ body {
 }
 .hire-me a:hover::before {
   width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .navbar {
+    display: flex;
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #22283156;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .navbar a {
+    margin: 5px 0;
+  }
+  .navbar.active {
+    left: 0;
+  }
+  .home {
+    margin-top: 33px;
+    display: flex;
+    align-content: center;
+    flex-direction: column-reverse;
+  }
+  .home-content {
+    margin-top: 170px;
+  }
+  .home-content h3 {
+    font-size: 20px;
+  }
+  .change-text {
+    font-size: 20px;
+  }
 }
