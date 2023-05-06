@@ -42,3 +42,4 @@ $(document).ready(function () {
   //     loop: true,
   //   });
 });
+document.addEventListener("touchstart", function () {}, true);
