@@ -4,8 +4,7 @@
   box-sizing: border-box;
 }
 #skills {
-  width: 100vw;
-  height: 65vh;
+  height: 100vh;
   background-color: #222831;
 }
 .skill {
@@ -18,43 +17,7 @@
   display: flex;
   justify-content: center;
   gap: 10%;
-}
-.flip {
-  position: relative;
-  margin-top: 53px;
-  margin-right: 30px;
-  animation: shake 5s ease 0s 1 normal forwards;
-}
-@keyframes shake {
-  0%,
-  100% {
-    transform: rotate(0deg);
-    transform-origin: 50% 0;
-  }
-
-  10% {
-    transform: rotate(2deg);
-  }
-
-  20%,
-  40%,
-  60% {
-    transform: rotate(-4deg);
-  }
-
-  30%,
-  50%,
-  70% {
-    transform: rotate(4deg);
-  }
-
-  80% {
-    transform: rotate(-2deg);
-  }
-
-  90% {
-    transform: rotate(2deg);
-  }
+  background-color: #222831;
 }
 
 .flip:hover {
@@ -77,8 +40,6 @@
   opacity: 0;
   top: 0px;
   left: 0px;
-  width: 100%;
-  height: 100%;
   transform: rotateY(-180deg);
 }
 .flip:hover > .front {
@@ -126,4 +87,16 @@
     16px 16px rgba(255, 211, 105, 0.04), 17px 17px rgba(255, 211, 105, 0.04),
     18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(255, 211, 105, 0.04),
     1.25rem 1.25rem rgba(0, 0, 0, 0.04);
+}
+@media only screen and (max-width: 768px) {
+  .flip {
+    width: 350px;
+  }
+  .flip-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: auto;
+  }
 }
