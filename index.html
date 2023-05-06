@@ -10,38 +10,106 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="./javascript.js" defer></script>
+    <script src="./about.js" defer></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="about.css">
+
 </head>
 
 <body>
-    <header class="header">
-        <a href="#" class="logo">Maxim<span style="color:#ffd369;">.</span></a>
-        <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
-        </nav>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </header>
-    <section class="home">
-        <img src="./Images/background.jpg" alt="">
-        <div class="home-content">
-            <h1>Hey, I'm Maxim Kovalski</h1>
-            <h3>and i'm a <span class="change-text"></span></h3>
-            <p>Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Officia, distinctio itaque <br> facere blanditiis
-                libero eveniet rerum doloribus <br> molestias odio qui commodi labore
-                quam, in porro deleniti quod, quibusdam
-                quas repellendus!</p>
-            <div class="hire-me">
-                <a style="margin-right: 20px;" href="./Images/background.jpg" download="">Download CV</a>
-                <a href="#">let's Talk</a>
+
+    <!-- Home -->
+    <div id="home">
+        <header class="header">
+            <a href="#" class="logo">Maxim<span class="dot">.</span></a>
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#project">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-    </section>
+        </header>
+        <section class="home">
+            <img class="profile" src="./Images/background.jpg" alt="">
+            <div class="home-content">
+                <h1>Hey, I'm Maxim Kovalski</h1>
+                <h3>and i'm a <span class="change-text"></span></h3>
+                <p>As a Full Stack Development student with a background in system administration, <br> I'm passionate
+                    about
+                    programming and
+                    eager to gain hands-on experience in building <br> dynamic web applications and dependable systems
+                    that
+                    help
+                    your business
+                    succeed.
+                </p>
+                <div class="hire-me">
+                    <a style="margin-right: 20px;" href="./Images/background.jpg" download="">Download CV</a>
+                    <a href="#">let's Talk</a>
+                </div>
+        </section>
+    </div>
+    <div id="skills">
+        <!-- Home -->
+        <!-- About -->
+        <h1 class="skill">Skills</h1>
+        <div class="flip-cards">
+            <div class="flip">
+                <div class="front" style="background-image: url(./Images/front-end.jpg)">
+                    <h1 class="text-shadow">Front-end</h1>
+                </div>
+                <div class="back">
+                    <h2>Angular</h2>
+                    <p>Good tools make application development quicker and easier to maintain than if you did everything
+                        by
+                        hand..
+                    </p>
+                </div>
+            </div>
+            <div class="flip">
+                <div class="front" style="background-image: url(./Images/tools.jpg)">
+                    <h1 class="text-shadow">Tools</h1>
+                </div>
+                <div class="back">
+                    <h2>Angular</h2>
+                    <p>Good tools make application development quicker and easier to maintain than if you did everything
+                        by
+                        hand..
+                    </p>
+                </div>
+            </div>
+            <div class="flip">
+                <div class="front" style="background-image: url(./Images/back-end.jpg)">
+                    <h1 class="text-shadow">Back-End</h1>
+                </div>
+                <div class="back">
+                    <h2>Angular</h2>
+                    <p>Good tools make application development quicker and easier to maintain than if you did everything
+                        by
+                        hand..
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Loader -->
+    <div id="loader">
+        <h1 style=color:#86bfd5>console<span style="color:white;">.<span class="test"
+                    style="color:#dcdcaa;">log</span></span><span style="color:#61afef;"></span>("</h1>
+        <div class="string">
+            <h1 class="greeting en">Hello World!</h1>
+            <h1 class="greeting he">שלום עולם</h1>
+            <h1 class="greeting de">Hallo Welt!</h1>
+            <h1 class="greeting it">Ciao Mondo!</h1>
+        </div>
+        <h1 class="closure">");</h1>
+    </div>
+    <!-- Loader -->
 </body>
 
 </html>
