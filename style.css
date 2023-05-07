@@ -10,6 +10,22 @@
 .change-text {
   font-family: "Bruno Ace SC", cursive;
 }
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #393e46;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e4bb68;
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 /*
 #222831 dark grey
 #393E46 grey
@@ -26,7 +42,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 100;
+  z-index: 500;
 }
 .logo {
   position: relative;
