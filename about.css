@@ -89,6 +89,31 @@
     1.25rem 1.25rem rgba(0, 0, 0, 0.04);
 }
 @media only screen and (max-width: 768px) {
+  @supports (-webkit-overflow-scrolling: touch) {
+    .back {
+      display: block;
+      -webkit-transition-timing-function: cubic-bezier(
+        0.175,
+        0.885,
+        0.32,
+        1.275
+      );
+      -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      -webkit-transition-duration: 0.5s;
+      -moz-transition-duration: 0.5s;
+      -ms-transition-duration: 0.5s;
+      -o-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      -webkit-transition-property: transform, opacity;
+      -moz-transition-property: transform, opacity;
+      -ms-transition-property: transform, opacity;
+      -o-transition-property: transform, opacity;
+      transition-property: transform, opacity;
+    }
+  }
   .flip {
     width: 350px;
   }
@@ -98,25 +123,5 @@
     align-items: center;
     height: auto;
     width: auto;
-  }
-}
-@supports (-webkit-touch-callout: none) {
-  .back {
-    display: block;
-    -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    -moz-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    -ms-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    -o-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    -webkit-transition-duration: 0.5s;
-    -moz-transition-duration: 0.5s;
-    -ms-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    -webkit-transition-property: transform, opacity;
-    -moz-transition-property: transform, opacity;
-    -ms-transition-property: transform, opacity;
-    -o-transition-property: transform, opacity;
-    transition-property: transform, opacity;
   }
 }
