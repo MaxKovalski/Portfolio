@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  font-family: "Poppins", sans-serif;
+}
+.project {
+  margin-top: 200px;
+  margin-bottom: 20px;
+  font-family: "Bruno Ace SC", cursive;
+  letter-spacing: 5px;
+  position: relative;
+  text-align: center;
+  font-size: 56px;
+  padding-bottom: 70px;
+  color: #eeeeee;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+
+  height: 1000px;
+  align-items: center;
+}
+
+.project-div-1 {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+  width: 80rem;
+  height: auto;
+  background-color: #222831;
+  border: 2px solid #393e46;
+  margin-bottom: 3rem;
+}
+.project-content-1 {
+  position: relative;
+  margin: 20px;
+  text-align: center;
+  height: auto;
+
+  border-radius: 10px;
+}
+.project-content-1 .project-title {
+  color: #eeeeee;
+  padding-bottom: 7%;
+}
+.project-content-1 .project-text {
+  color: #eeeeee;
+  padding-bottom: 13%;
+}
+.project-content-1 .project-link {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.project-content-1 a {
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+.project-content-1 a:hover {
+  font-size: 20px;
+}
+
+#project1 {
+  margin: 20px;
+  vertical-align: middle;
+  width: 750px;
+  height: 350px;
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+#project1:hover {
+  transform: scale(1.4);
+}
+.project-div-2 {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  border-radius: 10px;
+  width: 80rem;
+  height: auto;
+  background-color: #222831;
+  border: 2px solid #393e46;
+}
+
+.project-content-2 {
+  position: relative;
+  margin: 20px;
+  text-align: center;
+  height: auto;
+
+  border-radius: 10px;
+}
+.project-content-2 .project-title {
+  color: #eeeeee;
+  padding-bottom: 7%;
+}
+.project-content-2 .project-text {
+  color: #eeeeee;
+  padding-bottom: 13%;
+}
+.project-content-2 .project-link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.project-content-2 a {
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+.project-content-2 a:hover {
+  font-size: 20px;
+}
+#project2 {
+  margin: 20px;
+  vertical-align: middle;
+  width: 750px;
+  height: 350px;
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+#project2:hover {
+  transform: scale(1.4);
+}

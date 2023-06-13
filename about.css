@@ -1,23 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
+
 #skills {
-  height: 100vh;
   background-color: #222831;
 }
 .skill {
+  font-family: "Bruno Ace SC", cursive;
+  letter-spacing: 5px;
   position: relative;
   text-align: center;
   font-size: 56px;
+  padding-bottom: 70px;
+  color: #eeeeee;
 }
 
 .flip-cards {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   gap: 10%;
   background-color: #222831;
+  padding: 20px 10%;
+  height: 560px;
+}
+.flip-cards h1 {
+  font-size: 50px; 
 }
 
 .flip:hover {
@@ -54,18 +64,16 @@
   display: inline-block;
   margin-right: 2px;
   margin-bottom: 1em;
-  width: 600px;
+  width: 500px;
   will-change: transform;
-  /* Add will-change property */
 }
 .flip > .front,
 .flip > .back {
-  display: block;
-  color: white;
+  color: #ffd369 !important;
   background-size: cover !important;
   background-position: center !important;
   height: 500px;
-  padding: 1em 2em;
+  padding: 1em 1em;
   background-color: #222831;
   border-radius: 10px;
 }
@@ -73,7 +81,7 @@
 .flip > .back p {
   font-size: 0.9125rem;
   line-height: 160%;
-  color: #999;
+  color: #eeeeee;
 }
 .text-shadow {
   color: #ffd369;
@@ -98,8 +106,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: auto;
     width: auto;
+ padding: auto auto;
   }
 }
 @supports (-webkit-touch-callout: default) {
@@ -139,7 +149,6 @@
     transition-duration: 0.5s;
     transition-property: transform, opacity;
     backface-visibility: hidden;
-    /* Add hardware acceleration */
   }
 
   .flip > .front {
@@ -174,7 +183,7 @@
   .flip > .front,
   .flip > .back {
     display: block;
-    color: white;
+    color: #ffd369 !important;
     background-size: cover !important;
     background-position: center !important;
     height: 500px;
@@ -187,7 +196,7 @@
   .flip > .back p {
     font-size: 0.9125rem;
     line-height: 160%;
-    color: #999;
+    color: #eeeeee;
   }
 
   .text-shadow {
