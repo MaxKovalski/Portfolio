@@ -10,16 +10,17 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="./javascript.js" defer></script>
-    <script src="./about.js" defer></script>
+    <script src="./projects.js" defer></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="skills.css">
     <link rel="stylesheet" href="./project.css">
-
+    <script defer src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
 <body>
 
     <!-- Home -->
+    <div id="siteContainer">
     <div id="home">
         <header class="header">
             <a href="#" class="logo">Maxim<span class="dot">.</span></a>
@@ -51,14 +52,14 @@
                 </p>
                 <div class="hire-me">
                     <a style="margin-right: 20px;" href="./Images/background.jpg" download="">Download CV</a>
-                    <a  href="#">let's Talk</a>
+                    <a  href="#">Let's Talk</a>
                 </div>
         </section>
     </div>
 
     <div id="skills">
-        <!-- Home -->
-        <!-- About -->
+  
+        <!-- Skills -->
 
         <h1 class="skill">Skills</h1>
         <div class="flip-cards">
@@ -125,71 +126,52 @@
     </div>
     <br>
 
+<!-- Projects -->
+
 <div id="projects">
     <h4 class="project">Projects</h4>
 </div>
-
-
         <div class="container">
-                <div class="project-div-1" >
+                <div class="project-div-1 border-elem" >
                   <div class="project-content-1" >
                     <h3 class="project-title">Hat-Shop</h3>
                     <p class="project-text">
                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, consequatur dolore autem a asperiores excepturi. Consequatur harum atque asperiores, quis numquam sit impedit optio assumenda vel. Amet earum magnam eligendi!
                     </p>
-  <div class="project-link">
-                    <a href="https://maxkovalski.github.io/Css-Project/" target="_blank" style="margin-right: 1rem; color: #00FF40;">
-                      <span class="span">Live Demo</span>
-                    </a>
-                    <a href="https://github.com/MaxKovalski/Css-Project" target="_blank" style="color: #5c6bc0;"
-
-                     >
-                    
-                      <span class="span">Code</span>
-                      <img src="./Images/github.png" alt="" style="width: 25px; margin-bottom: -0.4rem;">
-                    </a>
-  
+  <div class="project-button-1">
+                <button id="modalBtn">Show More...</button>
                   </div>
                 </div>
-                  <div class="project-banner" >
-                    <img id="project1" src="./Images/Hat-shop.png" >
-                    
+                  <div class="project-banner1" >
+             
+                  </div>
+                  <div id="modal">
+                    <button id="modalX"><lottie-player src="./slash.json" color="white" background="transparent"  speed="1"  style="width: 60px; height: 30px;"  loop  autoplay></lottie-player></button>
+                    <div class="modal-container">
+                        <div class="modal-img"></div>
+                        <div class="modal-text"></div>
+                    </div>
                   </div>
                 </div>
-                <div class="project-div-2" >
-                   
-                    <div class="project-content-2" >
-                      <h3 class="project-title">World-Time</h3>
+                <div class="project-div-1 border-elem" >
+                    <div class="project-content-1" >
+                      <h3 class="project-title">Hat-Shop</h3>
                       <p class="project-text">
                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, consequatur dolore autem a asperiores excepturi. Consequatur harum atque asperiores, quis numquam sit impedit optio assumenda vel. Amet earum magnam eligendi!
                       </p>
-    <div class="project-link">
-        <a href="https://github.com/MaxKovalski/World-time" target="_blank" style="color: #5c6bc0;"
-  
-        >
-        <img src="./Images/github.png" alt="" style="width: 25px; margin-bottom: -0.4rem;">
-         <span class="span">Code</span>
-        
-       </a>
-                      <a href="https://maxkovalski.github.io/World-time/" target="_blank" style="margin-left: 1rem; color: #00FF40;">
+    <div class="project-link-1">
+                      <a href="https://maxkovalski.github.io/Css-Project/" target="_blank" style="margin-right: 1rem; color: #00FF40;">
                         <span class="span">Live Demo</span>
                       </a>
-                     
-    
                     </div>
                   </div>
-                  <div class="project-banner" >
-                    <img id="project2" src="./Images/world-time.png" >
+                    <div class="project-banner1" >
+                    </div>
                     
                   </div>
-                  </div>
               </div>
-    
 
-
-
-
-
+            
     <!-- Loader -->
     <!-- <div id="loader">
         <h1 style=color:#86bfd5>console<span style="color:white;">.<span class="test"
@@ -203,6 +185,7 @@
         <h1 class="closure">");</h1>
     </div> -->
     <!-- Loader -->
+</div>
 </body>
 
 </html>
