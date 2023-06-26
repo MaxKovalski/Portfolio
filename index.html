@@ -6,14 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/skills.css">
+    <link rel="stylesheet" href="./Css/project.css">
+    <link rel="stylesheet" href="./Css/contact.css">
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="./javascript.js" defer></script>
-    <script src="./projects.js" defer></script>
+    <script src="./JavaScript/javascript.js" defer></script>
+    <script src="./JavaScript/projects.js" defer></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <link rel="stylesheet" href="skills.css">
-    <link rel="stylesheet" href="./project.css">
     <script defer src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
@@ -64,7 +66,7 @@
         <h1 class="skill">Skills</h1>
         <div class="flip-cards">
             <div class="flip">
-                <div class="front" style="background-image: url(./Images/front-end.jpg)">
+                <div class="front" style="background-image: url(./Images/Skills-Image/front-end.jpg)">
                     <h1 class="text-shadow">Front-end</h1>
                 </div>
                 <div class="back">
@@ -85,7 +87,7 @@
                 </div>
             </div>
             <div class="flip">
-                <div class="front" style="background-image: url(./Images/tools.jpg)">
+                <div class="front" style="background-image: url(./Images/Skills-Image/tools.jpg)">
                     <h1 class="text-shadow">Tools</h1>
                 </div>
                 <div class="back">
@@ -106,7 +108,7 @@
                 </div>
             </div>
             <div class="flip">
-                <div class="front" style="background-image: url(./Images/back-end.jpg)">
+                <div class="front" style="background-image: url(./Images/Skills-Image/back-end.jpg)">
                     <h1 class="text-shadow">Back-End</h1>
                 </div>
                 <div class="back">
@@ -129,8 +131,10 @@
 <!-- Projects -->
 
 <div id="projects">
+
+
     <h4 class="project">Projects</h4>
-</div>
+
         <div class="container">
                 <div class="project-div-1 border-elem" >
                   <div class="project-content-1" >
@@ -146,10 +150,29 @@
              
                   </div>
                   <div id="modal">
-                    <button id="modalX"><lottie-player src="./slash.json" color="white" background="transparent"  speed="1"  style="width: 60px; height: 30px;"  loop  autoplay></lottie-player></button>
+                    <button id="modalX"><lottie-player src="./etc/slash.json" color="white" background="transparent"  speed="1"  style="width: 63px; height: 30px; "  loop  autoplay></lottie-player></button>
                     <div class="modal-container">
-                        <div class="modal-img"></div>
-                        <div class="modal-text"></div>
+                        <div class="modal-img">
+                            <div class="tech">
+                            <img src="./Images/Project-Image/Html.png" alt="">
+                            <br>
+                           <img src="./Images/Project-Image/Css.png" alt="">
+                            <br>
+                            <img src="./Images/Project-Image/JavasScript.png" alt="">
+                            <br>
+                          
+                        </div>
+                        </div>
+                        <div class="modal-text">
+                            <h1>Hat Shop</h1>
+                            <p>Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus necessitatibus delectus inventore deserunt eaque rerum voluptatem, animi, maxime repudiandae ipsum nobis. Sequi omnis dolorem, quam enim ex inventore reprehenderit tempore. sit amet, consectetur adipisicing elit. Officia perferendis adipisci est beatae sunt soluta quaerat. Placeat doloribus dolores exercitationem repellat ut fugit quam, vero quo vitae praesentium. Ipsum, dolor!</p>
+                         
+                        </div>
+                        <div class="modal-href">
+                            <a href=""><span>Live</span> &nbsp;<i class="fas fa-tv"></i></a>
+                            <a href=""><span>Code</span> &nbsp; <i class="fab fa-github"></i></a>
+                            <a href=""><span>Download</span>&nbsp;<i class="fas fa-download"></i> </a>   
+                        </div>
                     </div>
                   </div>
                 </div>
@@ -170,8 +193,65 @@
                     
                   </div>
               </div>
+            </div>
+        </div>
 
-            
+
+
+
+
+<div id="contact">
+    <h4 class="head-text">Contact</h4>
+    <div class="background">
+        <div class="container-contact">
+          <div class="screen">
+            <div class="screen-header">
+              <div class="screen-header-left">
+                <div class="screen-header-button close"></div>
+                <div class="screen-header-button maximize"></div>
+                <div class="screen-header-button minimize"></div>
+              </div>
+              <div class="screen-header-right">
+                <div class="screen-header-ellipsis"></div>
+                <div class="screen-header-ellipsis"></div>
+                <div class="screen-header-ellipsis"></div>
+              </div>
+            </div>
+            <div class="screen-body">
+                <div class="phone">
+           <img src="./Images/Contact-Image/contact.png" style="width: 500px;height: 300px;" alt="">
+        </div>
+              <div class="screen-body-item">
+                <div class="app-form">
+                  <div class="app-form-group">
+                    <input class="app-form-control" placeholder="NAME" >
+                  </div>
+                  <div class="app-form-group">
+                    <input class="app-form-control" placeholder="EMAIL">
+                  </div>
+                  <div class="app-form-group">
+                    <input class="app-form-control" placeholder="CONTACT NO">
+                  </div>
+                  <div class="app-form-group message">
+                    <input class="app-form-control" placeholder="MESSAGE">
+                  </div>
+                  <div class="icon-btn">
+                    <div>
+                        <h4>github</h4>
+                        <h4>linkdin</h4>
+                    </div>
+                    <button class="contact-btn">SEND</button>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+</div>
     <!-- Loader -->
     <!-- <div id="loader">
         <h1 style=color:#86bfd5>console<span style="color:white;">.<span class="test"
@@ -185,7 +265,7 @@
         <h1 class="closure">");</h1>
     </div> -->
     <!-- Loader -->
-</div>
+
 </body>
 
 </html>

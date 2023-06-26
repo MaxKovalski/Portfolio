@@ -7,8 +7,8 @@
   font-family: "Poppins", sans-serif;
 }
 .project {
-  margin-top: 200px;
-  margin-bottom: 20px;
+  padding-top: 95px;
+
   font-family: "Bruno Ace SC", cursive;
   letter-spacing: 5px;
   position: relative;
@@ -82,7 +82,7 @@
 .project-banner1 {
   background-size: 100% 100%;
   background-position: center;
-  background-image: url(./Images/Hat-shop.png);
+  background-image: url(../Images/Project-Image/Hat-shop.png);
   width: 120rem;
   height: 350px;
   margin-bottom: 20px;
@@ -106,40 +106,109 @@
   justify-content: center;
   display: none;
   backdrop-filter: blur(5px);
+  background-color: #222831a9;
 }
 #modalX {
   position: absolute;
   right: 0;
   border: none;
-  font-size: 20px;
   color: #ffd369;
-  width: 50px;
-
+  border-left: 3px solid #ffd369;
+  border-bottom: 3px solid #ffd369;
   background-color: #222831;
   border-bottom-left-radius: 6px;
   cursor: pointer;
   z-index: 12;
 }
 .modal-container {
+  border: solid 3px #ffd369;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 }
 .modal-img {
+  position: relative;
   margin-right: 0px !important;
   margin-bottom: 0px !important;
   background-size: 100% 100%;
   background-position: center;
-  background-image: url(./Images/Hat-shop.png);
+  background-image: url(../Images/Project-Image/Hat-shop.png);
   width: auto;
-  height: 350px;
+  height: 450px;
   margin-bottom: 20px;
   margin-right: 15px;
-  border-radius: 10px;
   transition: background-size 0.6s ease-in-out;
 }
-
+.modal-img .tech {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  z-index: 12;
+}
+.modal-img .tech img {
+  margin-bottom: 20px;
+  width: 25px;
+  height: 25px;
+}
 .modal-text {
-  width: 300px;
-  height: 300px;
-  border: 2px solid rgb(41, 19, 163);
+  display: flex;
+  flex-direction: column;
+  height: 360px;
+  align-self: center;
+  text-align: center;
+  color: #eeeeee;
+}
+
+.modal-href {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  gap: 60px;
+}
+
+.modal-href a {
+  position: relative;
+  display: inline-flex;
+  width: 150px;
+  height: 100%;
+  color: #222831;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffd369;
+  border: 2px solid #ffd369;
+  border-radius: 8px;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  padding: 10px 15px;
+}
+
+.modal-href a:hover {
+  color: #ffd369;
+  background-color: #393e46;
+}
+
+.modal-href a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #101820ff;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.modal-href a:hover::before {
+  width: 100%;
+}
+.modal-href a:nth-child(3) {
+  padding-left: 10px;
 }
 .blur {
   filter: blur(7px);
@@ -156,7 +225,7 @@
     padding: 16px 16px;
   }
   .project-banner1 {
-    background-image: url(./Images/Hat-Shop-Res.png);
+    background-image: url(../Images/Project-Image/Hat-Shop-Res.png);
     margin: auto;
     height: 468px;
     width: 318px;
@@ -166,5 +235,30 @@
   }
   .project-content-1 .project-button-1 {
     position: unset;
+  }
+  #modal {
+    height: 900px;
+  }
+  .modal-img {
+    background-image: url(../Images/Project-Image/Hat-Shop-Res.png);
+    margin: auto;
+    height: 468px;
+    width: 347px;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .modal-img .tech {
+    top: 70%;
+  }
+  .modal-img .tech img {
+    margin-top: auto;
+  }
+  .modal-href a {
+    width: auto;
+    height: auto;
+  }
+  .modal-href a span {
+    display: none;
   }
 }
