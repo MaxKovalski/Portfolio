@@ -12,10 +12,19 @@
   box-sizing: border-box !important;
   font-family: "Poppins", sans-serif;
 }
-
+.head-text {
+  padding-top: 95px;
+  font-family: "Bruno Ace SC", cursive;
+  letter-spacing: 5px;
+  position: relative;
+  text-align: center;
+  font-size: 56px;
+  padding-bottom: 70px;
+  color: #eeeeee;
+}
 .background {
   display: flex;
-  min-height: 100vh;
+  margin-bottom: 70px;
 }
 
 .container-contact {
@@ -138,8 +147,9 @@
 }
 
 .app-form-control {
-  width: 100%;
+  width: 850px;
   padding: 10px 0;
+
   background: none;
   border: none;
   border-bottom: 1px solid #393e46;
@@ -157,64 +167,35 @@
 .app-form-control:focus {
   border-bottom-color: #ffd369;
 }
+.phone-img {
+  background-image: url(../Images/Contact-Image/contact.png);
+  background-size: 100% 100%;
+  width: 500px;
+  height: 300px;
+  margin-right: 100px;
+}
 .icon-btn {
   display: flex;
   justify-content: space-between;
 }
-
-.credits {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  color: #ffa4bd;
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 16px;
-  font-weight: normal;
+.icon-btn a {
+  color: #ffd369;
+  margin-right: 20px;
+  font-size: 25px;
 }
-
-.credits-link {
-  display: flex;
-  align-items: center;
-  color: #fff;
-  font-weight: bold;
-  text-decoration: none;
+.contact-btn {
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: solid 2px #ffd369;
+  color: #ffd369;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
 }
-
-.dribbble {
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
-}
-
-@media screen and (max-width: 520px) {
-  .screen-body {
-    flex-direction: column;
-  }
-
-  .screen-body-item.left {
-    margin-bottom: 30px;
-  }
-
-  .app-title {
-    flex-direction: row;
-  }
-
-  .app-title span {
-    margin-right: 12px;
-  }
-
-  .app-title:after {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .screen-body {
-    padding: 40px;
-  }
-
-  .screen-body-item {
-    padding: 0;
-  }
+.contact-btn:hover {
+  border-radius: 12px;
+  background-color: #ffd369;
+  color: #393e46;
 }

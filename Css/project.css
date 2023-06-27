@@ -8,7 +8,6 @@
 }
 .project {
   padding-top: 95px;
-
   font-family: "Bruno Ace SC", cursive;
   letter-spacing: 5px;
   position: relative;
@@ -82,7 +81,7 @@
 .project-banner1 {
   background-size: 100% 100%;
   background-position: center;
-  background-image: url(../Images/Project-Image/Hat-shop.png);
+  background-image: url(../Images/Project-Image/JsProject/TodoList.png);
   width: 120rem;
   height: 350px;
   margin-bottom: 20px;
@@ -132,7 +131,7 @@
   margin-bottom: 0px !important;
   background-size: 100% 100%;
   background-position: center;
-  background-image: url(../Images/Project-Image/Hat-shop.png);
+  background-image: url(../Images/Project-Image/JsProject/TodoList.png);
   width: auto;
   height: 450px;
   margin-bottom: 20px;
@@ -225,7 +224,7 @@
     padding: 16px 16px;
   }
   .project-banner1 {
-    background-image: url(../Images/Project-Image/Hat-Shop-Res.png);
+    background-image: url(../Images/Project-Image/JsProject/TodoListRes.png);
     margin: auto;
     height: 468px;
     width: 318px;
@@ -240,7 +239,7 @@
     height: 900px;
   }
   .modal-img {
-    background-image: url(../Images/Project-Image/Hat-Shop-Res.png);
+    background-image: url(../Images/Project-Image/JsProject/TodoListRes.png);
     margin: auto;
     height: 468px;
     width: 347px;
