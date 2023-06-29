@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
 *,
 *:before,
 *:after {
@@ -12,6 +14,11 @@
   box-sizing: border-box !important;
   font-family: "Poppins", sans-serif;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .head-text {
   padding-top: 95px;
   font-family: "Bruno Ace SC", cursive;
@@ -25,22 +32,18 @@
 .background {
   display: flex;
   margin-bottom: 70px;
+  padding: 20px 10%;
 }
 
 .container-contact {
   flex: 0 1 700px;
   margin: auto;
 }
-/*
-#222831 dark grey
-#393E46 grey
-#FFD369 yellow
-#EEEEEE white */
 .screen {
   position: relative;
   background: transparent;
   border-radius: 15px;
-  width: 80vw;
+  width: 50vw;
   height: 500px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   border-left: solid 2px #393e46;
@@ -96,10 +99,10 @@
 
 .screen-body {
   display: flex;
+  justify-content: space-between;
 }
 
 .screen-body-item {
-  flex: 1;
   padding: 50px;
 }
 
@@ -147,15 +150,14 @@
 }
 
 .app-form-control {
-  width: 850px;
+  width: 100%;
   padding: 10px 0;
-
+  width: 20vw;
   background: none;
   border: none;
   border-bottom: 1px solid #393e46;
   color: #ffd369;
   font-size: 14px;
-  text-transform: uppercase;
   outline: none;
   transition: border-color 0.2s;
 }
@@ -169,10 +171,9 @@
 }
 .phone-img {
   background-image: url(../Images/Contact-Image/contact.png);
-  background-size: 100% 100%;
+  background-size: 110% 100%;
   width: 500px;
   height: 300px;
-  margin-right: 100px;
 }
 .icon-btn {
   display: flex;
@@ -198,4 +199,38 @@
   border-radius: 12px;
   background-color: #ffd369;
   color: #393e46;
+}
+@media only screen and (max-width: 1340px) {
+  .screen {
+    width: unset;
+  }
+  .screen-body {
+    display: block;
+  }
+  .phone-img {
+    display: none;
+  }
+  .app-form-control {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 712px) {
+  .icon-btn {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+  }
+  .icon-btn a {
+    margin: 0 !important;
+  }
+  .icon-a {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .contact-btn {
+    width: 40%;
+    padding: 2%;
+    margin-top: 35px;
+    align-self: center;
+  }
 }

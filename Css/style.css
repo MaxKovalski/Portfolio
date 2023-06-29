@@ -28,12 +28,6 @@
 body {
   background-color: #222831;
 }
-/*
-#222831 dark grey
-#393E46 grey
-#FFD369 yellow
-#EEEEEE white */
-
 .header {
   position: fixed;
   top: 0;
@@ -427,5 +421,11 @@ body {
 @media only screen and (max-width: 320px) {
   .home {
     margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .change-text {
+    font-size: 15px;
   }
 }
