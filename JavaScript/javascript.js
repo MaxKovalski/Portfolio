@@ -26,7 +26,7 @@ navLinks.forEach((link) => {
 });
 $(document).ready(function () {
   let typed1 = new Typed(".change-text", {
-    strings: ["Full Stack Developer", "System-Administrator"],
+    strings: ["Full Stack Developer", "IT Specialist"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
