@@ -35,7 +35,10 @@
   border: #ffd369 2px solid;
   border-radius: 2%;
 }
-
+.back {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 .flip > .front,
 .flip > .back {
   display: block;
@@ -121,7 +124,6 @@
   }
 
   #skills {
-    height: 100vh;
     background-color: #222831;
   }
 

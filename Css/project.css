@@ -6,8 +6,10 @@
   box-sizing: border-box !important;
   font-family: "Poppins", sans-serif;
 }
-.project {
+#projects {
   padding-top: 95px;
+}
+.project {
   font-family: "Bruno Ace SC", cursive;
   letter-spacing: 5px;
   position: relative;
@@ -212,7 +214,9 @@
 .blur {
   filter: blur(7px);
 }
-@media only screen and (max-width: 712px) {
+@media only screen and (max-width: 712px) and (orientation: portrait) {
+  .project {
+  }
   .container {
     padding: 20px 39px;
   }

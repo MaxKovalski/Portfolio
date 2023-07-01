@@ -152,11 +152,11 @@ body {
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10%;
+  padding: 20px 10%;
   background-color: #222831;
   margin-bottom: 10px;
 }
-.profile {
+.profile-img {
   background-image: url(../Images/Profile.jfif);
   background-size: 100% 100%;
   width: 300px;
@@ -165,7 +165,7 @@ body {
   opacity: 0.8;
   box-shadow: 0px 12px 80px 9px #222831 inset;
 }
-.profile::before {
+.profile-img::before {
   content: "";
   position: absolute;
   top: 0;
@@ -297,64 +297,6 @@ body {
 .hire-me a:hover::before {
   width: 100%;
 }
-@media only screen and (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-  .header.active {
-    background-color: #222831;
-  }
-  .navbar {
-    display: flex;
-    position: fixed;
-    left: -100%;
-    top: 70px;
-    gap: 0;
-    flex-direction: column;
-    background-color: #222831;
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
-  }
-  .navbar a {
-    font-size: 30px;
-    margin-top: 30px;
-  }
-  .navbar.active {
-    width: 100%;
-    height: 100%;
-    left: 0;
-    overflow: hidden !important;
-  }
-  .home {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column-reverse;
-    align-content: center;
-  }
-  img {
-    margin-top: 70px;
-  }
-  .home-content {
-    margin-top: 170px;
-  }
-  .home-content h3 {
-    font-size: 20px;
-  }
-  .change-text {
-    font-size: 20px;
-  }
-}
 .string {
   display: flex;
   flex-direction: column;
@@ -437,6 +379,68 @@ body {
 #loader h1 {
   font-family: "JetBrains Mono", monospace;
 }
+@media only screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .header.active {
+    background-color: #222831;
+  }
+  .navbar {
+    display: flex;
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #222831;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .navbar a {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  .navbar.active {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    overflow: hidden !important;
+  }
+  .home {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+  }
+  img {
+    margin-top: 70px;
+  }
+  .home-content {
+    margin-top: 170px;
+  }
+  .home-content h3 {
+    font-size: 20px;
+  }
+  .change-text {
+    font-size: 20px;
+  }
+  .profile-img {
+    margin-top: 30px;
+  }
+}
+
 @media only screen and (max-width: 320px) {
   .home {
     margin-top: 50px;

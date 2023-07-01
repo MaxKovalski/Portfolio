@@ -33,6 +33,6 @@ $(document).ready(function () {
   });
 });
 setTimeout(() => {
-  let test = document.getElementById("loader");
-  test.remove();
+  let loader = document.getElementById("loader");
+  loader.remove();
 }, 3000);
