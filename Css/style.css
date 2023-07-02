@@ -423,6 +423,7 @@ body {
     display: flex;
     flex-direction: column-reverse;
     align-content: center;
+    height: auto;
   }
   img {
     margin-top: 70px;
@@ -437,7 +438,7 @@ body {
     font-size: 20px;
   }
   .profile-img {
-    margin-top: 30px;
+    margin-top: 70px;
   }
 }
 
