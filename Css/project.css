@@ -27,6 +27,19 @@
 .border-elem {
   border: 2px solid #393e46;
 }
+.project-text {
+  line-height: 30px;
+  text-align: start;
+}
+.modal-text {
+  line-height: 30px;
+}
+.modal-text h1 {
+  margin-top: 20px;
+}
+.modal-text p {
+  margin-top: 20px;
+}
 /* PROJECT-1 */
 .project-div-1 {
   position: relative;
@@ -48,7 +61,7 @@
 }
 .project-content-1 .project-title {
   color: #eeeeee;
-  padding-bottom: 7%;
+  padding-bottom: 3%;
 }
 .project-content-1 .project-text {
   color: #eeeeee;
@@ -94,8 +107,20 @@
 .project-banner1:hover {
   background-size: 120% 120%;
 }
-
-/* PROJECT2 */
+.modal-img {
+  position: relative;
+  margin-right: 0px !important;
+  margin-bottom: 0px !important;
+  background-size: 100% 100%;
+  background-position: center;
+  background-image: url(../Images/Project-Image/JsProject/TodoList.png);
+  width: auto;
+  height: 450px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  transition: background-size 0.6s ease-in-out;
+}
+/* PROJECT-2 */
 
 .project-div-2 {
   position: relative;
@@ -118,7 +143,7 @@
 }
 .project-content-2 .project-title {
   color: #eeeeee;
-  padding-bottom: 7%;
+  padding-bottom: 3%;
 }
 .project-content-2 .project-text {
   color: #eeeeee;
@@ -162,6 +187,73 @@
 }
 
 .project-banner2:hover {
+  background-size: 120% 120%;
+}
+/* PROJECT-3 */
+.project-div-3 {
+  position: relative;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+  width: 60vw;
+  height: auto;
+  background-color: #222831;
+  margin-bottom: 3rem;
+}
+.project-content-3 {
+  position: relative;
+  margin: 20px;
+  text-align: center;
+  height: auto;
+  border-radius: 10px;
+}
+.project-content-3 .project-title {
+  color: #eeeeee;
+  padding-bottom: 3%;
+}
+.project-content-3 .project-text {
+  color: #eeeeee;
+  padding-bottom: 13%;
+}
+.project-content-3 .project-button-1 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: auto;
+}
+.project-content-3 button {
+  transition: 0.3s ease;
+  text-decoration: none;
+  background-color: transparent;
+  border: #ffd369 solid 1px;
+  font-size: 18px;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  color: #ffd369;
+  border-radius: 8px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.project-content-3 button:hover {
+  transform: scale(1.2);
+}
+.project-banner3 {
+  background-size: 100% 100%;
+  background-position: center;
+  background-image: url(../Images/Project-Image/JsProject/TodoList.png);
+  width: 120rem;
+  height: 350px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  border-radius: 10px;
+  transition: background-size 0.6s ease-in-out;
+}
+
+.project-banner3:hover {
   background-size: 120% 120%;
 }
 
@@ -212,6 +304,7 @@
   cursor: pointer;
   z-index: 12;
 }
+/* CSS-MODAL-PROJECT-2 */
 #modal2 {
   z-index: 10;
   position: absolute;
@@ -225,7 +318,6 @@
   backdrop-filter: blur(5px);
   background-color: #222831a9;
 }
-/* CSS-MODAL-PROJECT-2 */
 #modalX2 {
   position: absolute;
   right: 0;
@@ -243,19 +335,8 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-}
-.modal-img {
-  position: relative;
-  margin-right: 0px !important;
-  margin-bottom: 0px !important;
-  background-size: 100% 100%;
-  background-position: center;
-  background-image: url(../Images/Project-Image/JsProject/TodoList.png);
-  width: auto;
-  height: 450px;
-  margin-bottom: 20px;
-  margin-right: 15px;
-  transition: background-size 0.6s ease-in-out;
+  width: 1241px;
+  height: 830.2px;
 }
 .modal-img2 {
   position: relative;
@@ -270,6 +351,54 @@
   margin-right: 15px;
   transition: background-size 0.6s ease-in-out;
 }
+
+/* modal project-3 */
+#modal3 {
+  z-index: 10;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 101%;
+  height: 835px;
+  display: flex;
+  justify-content: center;
+  display: none;
+  backdrop-filter: blur(5px);
+  background-color: #222831a9;
+}
+#modalX3 {
+  position: absolute;
+  right: 0;
+  border: none;
+  color: #ffd369;
+  border-left: 3px solid #ffd369;
+  border-bottom: 3px solid #ffd369;
+  background-color: #222831;
+  border-bottom-left-radius: 6px;
+  cursor: pointer;
+  z-index: 12;
+}
+.modal-container {
+  border: solid 3px #ffd369;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-img3 {
+  position: relative;
+  margin-right: 0px !important;
+  margin-bottom: 0px !important;
+  background-size: 100% 100%;
+  background-position: center;
+  background-image: url(../Images/Project-Image/JsProject/MemoryGame.png);
+  width: auto;
+  height: 450px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  transition: background-size 0.6s ease-in-out;
+}
+/* MODAL */
 .modal-img .tech {
   position: absolute;
   top: 40%;
@@ -282,12 +411,23 @@
   right: 0;
   z-index: 12;
 }
+.modal-img3 .tech {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  z-index: 12;
+}
 .modal-img .tech img {
   margin-bottom: 20px;
   width: 25px;
   height: 25px;
 }
 .modal-img2 .tech img {
+  margin-bottom: 20px;
+  width: 25px;
+  height: 25px;
+}
+.modal-img3 .tech img {
   margin-bottom: 20px;
   width: 25px;
   height: 25px;
@@ -361,7 +501,8 @@
     padding: 20px 39px;
   }
   .project-div-1,
-  .project-div-2 {
+  .project-div-2,
+  .project-div-3 {
     display: flex;
     flex-direction: column;
     width: auto;
@@ -386,14 +527,27 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+  .project-banner3 {
+    background-image: url(../Images/Project-Image/JsProject//MemoryGame.png);
+    margin: auto;
+    height: 468px;
+    width: 318px;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   .project-content-1 .project-button-1 {
     position: unset;
   }
   .project-content-2 .project-button-2 {
     position: unset;
   }
+  .project-content-3 .project-button-2 {
+    position: unset;
+  }
   #modal,
-  #modal2 {
+  #modal2,
+  #modal3 {
     height: 900px;
   }
   .modal-img {
