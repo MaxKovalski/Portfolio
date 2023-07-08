@@ -38,6 +38,7 @@
   margin-top: 20px;
 }
 .modal-text p {
+  overflow-y: auto;
   margin-top: 20px;
 }
 /* PROJECT-1 */
@@ -67,6 +68,7 @@
   color: #eeeeee;
   padding-bottom: 13%;
 }
+
 .project-content-1 .project-button-1 {
   position: absolute;
   bottom: 0;
@@ -95,7 +97,8 @@
 .project-banner1 {
   background-size: 100% 100%;
   background-position: center;
-  background-image: url(../Images/Project-Image/JsProject/TodoList.png);
+
+  background-image: url(../Images/Project-Image/JsProject/Todo-Images/todo.png);
   width: 120rem;
   height: 350px;
   margin-bottom: 20px;
@@ -113,7 +116,8 @@
   margin-bottom: 0px !important;
   background-size: 100% 100%;
   background-position: center;
-  background-image: url(../Images/Project-Image/JsProject/TodoList.png);
+  background-image: url(../Images/Project-Image/JsProject/Todo-Images/todo-modal.png);
+  object-fit: fill !important;
   width: auto;
   height: 450px;
   margin-bottom: 20px;
@@ -177,7 +181,7 @@
 .project-banner2 {
   background-size: 100% 100%;
   background-position: center;
-  background-image: url(../Images/Project-Image/JsProject/MemoryGame.png);
+  background-image: url(../Images/Project-Image/JsProject/Memory-images/MemoryGame.png);
   width: 120rem;
   height: 350px;
   margin-bottom: 20px;
@@ -216,7 +220,7 @@
   color: #eeeeee;
   padding-bottom: 13%;
 }
-.project-content-3 .project-button-1 {
+.project-content-3 .project-button-3 {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -244,7 +248,8 @@
 .project-banner3 {
   background-size: 100% 100%;
   background-position: center;
-  background-image: url(../Images/Project-Image/JsProject/TodoList.png);
+  background-image: url(../Images/Project-Image/JsProject/Snake/Snake.png);
+
   width: 120rem;
   height: 350px;
   margin-bottom: 20px;
@@ -344,7 +349,7 @@
   margin-bottom: 0px !important;
   background-size: 100% 100%;
   background-position: center;
-  background-image: url(../Images/Project-Image/JsProject/MemoryGame.png);
+  background-image: url(../Images/Project-Image/JsProject/Memory-images/MemoryGame.png);
   width: auto;
   height: 450px;
   margin-bottom: 20px;
@@ -391,7 +396,7 @@
   margin-bottom: 0px !important;
   background-size: 100% 100%;
   background-position: center;
-  background-image: url(../Images/Project-Image/JsProject/MemoryGame.png);
+  background-image: url(../Images/Project-Image/JsProject/Snake/Snake.png);
   width: auto;
   height: 450px;
   margin-bottom: 20px;
@@ -510,7 +515,7 @@
     padding: 16px 16px;
   }
   .project-banner1 {
-    background-image: url(../Images/Project-Image/JsProject/TodoListRes.png);
+    background-image: url(../Images/Project-Image/JsProject/Todo-Images/TodoListRes.png);
     margin: auto;
     height: 468px;
     width: 318px;
@@ -519,7 +524,7 @@
     background-position: center;
   }
   .project-banner2 {
-    background-image: url(../Images/Project-Image/JsProject//MemoryGame.png);
+    background-image: url(../Images/Project-Image/JsProject/Memory-images/Memory-res.png);
     margin: auto;
     height: 468px;
     width: 318px;
@@ -528,7 +533,7 @@
     background-position: center;
   }
   .project-banner3 {
-    background-image: url(../Images/Project-Image/JsProject//MemoryGame.png);
+    background-image: url(../Images/Project-Image/JsProject/Snake/Snake.png);
     margin: auto;
     height: 468px;
     width: 318px;
@@ -548,10 +553,10 @@
   #modal,
   #modal2,
   #modal3 {
-    height: 900px;
+    height: 1000px;
   }
   .modal-img {
-    background-image: url(../Images/Project-Image/JsProject/TodoListRes.png);
+    background-image: url(../Images/Project-Image/JsProject/Todo-Images/TodoListRes.png);
     margin: auto;
     height: 468px;
     width: 347px;
@@ -560,7 +565,7 @@
     background-position: center;
   }
   .modal-img2 {
-    background-image: url(../Images/Project-Image/JsProject/TodoListRes.png);
+    background-image: url(../Images/Project-Image/JsProject/Memory-images/Memory-res.png);
     margin: auto;
     height: 468px;
     width: 347px;
@@ -568,17 +573,31 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-
+  .modal-img3 {
+    background-image: url(../Images/Project-Image/JsProject/Snake/Snake.png);
+    margin: auto;
+    height: 468px;
+    width: 347px;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   .modal-img .tech {
-    top: 70%;
+    top: 50%;
   }
   .modal-img .tech img {
     margin-top: auto;
   }
   .modal-img2 .tech {
-    top: 70%;
+    top: 50%;
   }
   .modal-img2 .tech img {
+    margin-top: auto;
+  }
+  .modal-img3 .tech {
+    top: 50%;
+  }
+  .modal-img3 .tech img {
     margin-top: auto;
   }
   .modal-href a {
