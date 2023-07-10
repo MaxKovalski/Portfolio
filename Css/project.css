@@ -48,7 +48,7 @@
   display: flex;
   justify-content: space-around;
   border-radius: 10px;
-  width: 60vw;
+  width: auto;
   height: auto;
   background-color: #222831;
   margin-bottom: 3rem;
@@ -67,6 +67,8 @@
 .project-content-1 .project-text {
   color: #eeeeee;
   padding-bottom: 13%;
+  width: 505px;
+  height: 120px;
 }
 
 .project-content-1 .project-button-1 {
@@ -97,9 +99,8 @@
 .project-banner1 {
   background-size: 100% 100%;
   background-position: center;
-
   background-image: url(../Images/Project-Image/JsProject/Todo-Images/todo.png);
-  width: 120rem;
+  width: 588px;
   height: 350px;
   margin-bottom: 20px;
   margin-right: 15px;
@@ -133,7 +134,7 @@
   flex-direction: row-reverse;
   justify-content: space-around;
   border-radius: 10px;
-  width: 60vw;
+  width: auto;
   height: auto;
   background-color: #222831;
   margin-bottom: 3rem;
@@ -152,6 +153,8 @@
 .project-content-2 .project-text {
   color: #eeeeee;
   padding-bottom: 13%;
+  width: 505px;
+  height: 120px;
 }
 .project-content-2 .project-button-2 {
   position: absolute;
@@ -182,7 +185,7 @@
   background-size: 100% 100%;
   background-position: center;
   background-image: url(../Images/Project-Image/JsProject/Memory-images/MemoryGame.png);
-  width: 120rem;
+  width: 588px;
   height: 350px;
   margin-bottom: 20px;
   margin-left: 15px;
@@ -200,7 +203,7 @@
   display: flex;
   justify-content: space-around;
   border-radius: 10px;
-  width: 60vw;
+  width: auto;
   height: auto;
   background-color: #222831;
   margin-bottom: 3rem;
@@ -219,6 +222,8 @@
 .project-content-3 .project-text {
   color: #eeeeee;
   padding-bottom: 13%;
+  width: 505px;
+  height: 120px;
 }
 .project-content-3 .project-button-3 {
   position: absolute;
@@ -249,8 +254,7 @@
   background-size: 100% 100%;
   background-position: center;
   background-image: url(../Images/Project-Image/JsProject/Snake/Snake.png);
-
-  width: 120rem;
+  width: 588px;
   height: 350px;
   margin-bottom: 20px;
   margin-right: 15px;
@@ -261,7 +265,145 @@
 .project-banner3:hover {
   background-size: 120% 120%;
 }
+/* PROJECT-4 */
+.project-div-4 {
+  position: relative;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+  background-color: #222831;
+  margin-bottom: 3rem;
+}
+.project-content-4 {
+  position: relative;
+  margin: 20px;
+  text-align: center;
+  height: auto;
+  border-radius: 10px;
+}
+.project-content-4 .project-title {
+  color: #eeeeee;
+  padding-bottom: 3%;
+}
+.project-content-4 .project-text {
+  color: #eeeeee;
+  padding-bottom: 13%;
+  width: 505px;
+  height: 120px;
+}
+.project-content-4 .project-button-4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: auto;
+}
+.project-content-4 button {
+  transition: 0.3s ease;
+  text-decoration: none;
+  background-color: transparent;
+  border: #ffd369 solid 1px;
+  font-size: 18px;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  color: #ffd369;
+  border-radius: 8px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.project-content-4 button:hover {
+  transform: scale(1.2);
+}
+.project-banner4 {
+  background-size: 100% 100%;
+  background-position: center;
+  background-image: url(../Images/Project-Image/JsProject/Gallery/gallery.png);
+  width: 588px;
+  height: 350px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  border-radius: 10px;
+  transition: background-size 0.6s ease-in-out;
+}
 
+.project-banner4:hover {
+  background-size: 120% 120%;
+}
+/* PROJECT-5 */
+.project-div-5 {
+  position: relative;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+  background-color: #222831;
+  margin-bottom: 3rem;
+}
+.project-content-5 {
+  position: relative;
+  margin: 20px;
+  text-align: center;
+  height: auto;
+  border-radius: 10px;
+}
+.project-content-5 .project-title {
+  color: #eeeeee;
+  padding-bottom: 3%;
+}
+.project-content-5 .project-text {
+  color: #eeeeee;
+  padding-bottom: 13%;
+  width: 505px;
+  height: 120px;
+}
+.project-content-5 .project-button-5 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: auto;
+}
+.project-content-5 button {
+  transition: 0.3s ease;
+  text-decoration: none;
+  background-color: transparent;
+  border: #ffd369 solid 1px;
+  font-size: 18px;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  color: #ffd369;
+  border-radius: 8px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.project-content-5 button:hover {
+  transform: scale(1.2);
+}
+.project-banner5 {
+  background-size: 100% 100%;
+  background-position: center;
+  background-image: url(../Images/Project-Image/JsProject/Calculator/Calculator.png);
+  width: 588px;
+  height: 350px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  border-radius: 10px;
+  transition: background-size 0.6s ease-in-out;
+}
+
+.project-banner5:hover {
+  background-size: 120% 120%;
+}
 /* ANIMATION-MODAL */
 @keyframes fadeIn {
   from {
@@ -294,36 +436,10 @@
   display: flex;
   justify-content: center;
   display: none;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
   background-color: #222831a9;
 }
 #modalX {
-  position: absolute;
-  right: 0;
-  border: none;
-  color: #ffd369;
-  border-left: 3px solid #ffd369;
-  border-bottom: 3px solid #ffd369;
-  background-color: #222831;
-  border-bottom-left-radius: 6px;
-  cursor: pointer;
-  z-index: 12;
-}
-/* CSS-MODAL-PROJECT-2 */
-#modal2 {
-  z-index: 10;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 101%;
-  height: 835px;
-  display: flex;
-  justify-content: center;
-  display: none;
-  backdrop-filter: blur(5px);
-  background-color: #222831a9;
-}
-#modalX2 {
   position: absolute;
   right: 0;
   border: none;
@@ -343,6 +459,33 @@
   width: 1241px;
   height: 830.2px;
 }
+/* CSS-MODAL-PROJECT-2 */
+#modal2 {
+  z-index: 10;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 101%;
+  height: 835px;
+  display: flex;
+  justify-content: center;
+  display: none;
+  backdrop-filter: blur(10px);
+  background-color: #222831a9;
+}
+#modalX2 {
+  position: absolute;
+  right: 0;
+  border: none;
+  color: #ffd369;
+  border-left: 3px solid #ffd369;
+  border-bottom: 3px solid #ffd369;
+  background-color: #222831;
+  border-bottom-left-radius: 6px;
+  cursor: pointer;
+  z-index: 12;
+}
+
 .modal-img2 {
   position: relative;
   margin-right: 0px !important;
@@ -368,7 +511,7 @@
   display: flex;
   justify-content: center;
   display: none;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
   background-color: #222831a9;
 }
 #modalX3 {
@@ -382,12 +525,6 @@
   border-bottom-left-radius: 6px;
   cursor: pointer;
   z-index: 12;
-}
-.modal-container {
-  border: solid 3px #ffd369;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
 }
 
 .modal-img3 {
@@ -403,23 +540,116 @@
   margin-right: 15px;
   transition: background-size 0.6s ease-in-out;
 }
-/* MODAL */
+/* CSS-MODAL-PROJECT-4 */
+#modal4 {
+  z-index: 10;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 101%;
+  height: 835px;
+  display: flex;
+  justify-content: center;
+  display: none;
+  backdrop-filter: blur(10px);
+  background-color: #222831a9;
+}
+#modalX4 {
+  position: absolute;
+  right: 0;
+  border: none;
+  color: #ffd369;
+  border-left: 3px solid #ffd369;
+  border-bottom: 3px solid #ffd369;
+  background-color: #222831;
+  border-bottom-left-radius: 6px;
+  cursor: pointer;
+  z-index: 12;
+}
+
+.modal-img4 {
+  position: relative;
+  margin-right: 0px !important;
+  margin-bottom: 0px !important;
+  background-size: 100% 100%;
+  background-position: center;
+  background-image: url(../Images/Project-Image/JsProject/Gallery/gallery.png);
+  width: auto;
+  height: 450px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  transition: background-size 0.6s ease-in-out;
+}
+
+/* modal project-5 */
+#modal5 {
+  z-index: 10;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 101%;
+  height: 835px;
+  display: flex;
+  justify-content: center;
+  display: none;
+  backdrop-filter: blur(10px);
+  background-color: #222831a9;
+}
+#modalX5 {
+  position: absolute;
+  right: 0;
+  border: none;
+  color: #ffd369;
+  border-left: 3px solid #ffd369;
+  border-bottom: 3px solid #ffd369;
+  background-color: #222831;
+  border-bottom-left-radius: 6px;
+  cursor: pointer;
+  z-index: 12;
+}
+
+.modal-img5 {
+  position: relative;
+  margin-right: 0px !important;
+  margin-bottom: 0px !important;
+  background-size: 100% 100%;
+  background-position: center;
+  background-image: url(../Images/Project-Image/JsProject/Calculator/Calculator-modal.png);
+  width: auto;
+  height: 450px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  transition: background-size 0.6s ease-in-out;
+}
+
 .modal-img .tech {
   position: absolute;
   top: 40%;
-  right: 0;
+  right: 1%;
   z-index: 12;
 }
 .modal-img2 .tech {
   position: absolute;
   top: 40%;
-  right: 0;
+  right: 1%;
   z-index: 12;
 }
 .modal-img3 .tech {
   position: absolute;
   top: 40%;
-  right: 0;
+  right: 1%;
+  z-index: 12;
+}
+.modal-img4 .tech {
+  position: absolute;
+  top: 40%;
+  right: 1%;
+  z-index: 12;
+}
+.modal-img5 .tech {
+  position: absolute;
+  top: 40%;
+  right: 1%;
   z-index: 12;
 }
 .modal-img .tech img {
@@ -433,6 +663,16 @@
   height: 25px;
 }
 .modal-img3 .tech img {
+  margin-bottom: 20px;
+  width: 25px;
+  height: 25px;
+}
+.modal-img4 .tech img {
+  margin-bottom: 20px;
+  width: 25px;
+  height: 25px;
+}
+.modal-img5 .tech img {
   margin-bottom: 20px;
   width: 25px;
   height: 25px;
@@ -507,12 +747,44 @@
   }
   .project-div-1,
   .project-div-2,
-  .project-div-3 {
+  .project-div-3,
+  .project-div-4,
+  .project-div-5 {
     display: flex;
     flex-direction: column;
     width: auto;
     height: auto;
     padding: 16px 16px;
+  }
+  .project-content-1 .project-text {
+    color: #eeeeee;
+    padding-bottom: 13%;
+    width: auto;
+    height: auto;
+  }
+  .project-content-2 .project-text {
+    color: #eeeeee;
+    padding-bottom: 13%;
+    width: auto;
+    height: auto;
+  }
+  .project-content-3 .project-text {
+    color: #eeeeee;
+    padding-bottom: 13%;
+    width: auto;
+    height: auto;
+  }
+  .project-content-4 .project-text {
+    color: #eeeeee;
+    padding-bottom: 13%;
+    width: auto;
+    height: auto;
+  }
+  .project-content-5 .project-text {
+    color: #eeeeee;
+    padding-bottom: 13%;
+    width: auto;
+    height: auto;
   }
   .project-banner1 {
     background-image: url(../Images/Project-Image/JsProject/Todo-Images/TodoListRes.png);
@@ -541,18 +813,44 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+  .project-banner4 {
+    background-image: url(../Images/Project-Image/JsProject/Gallery/gallery-res.png);
+    margin: auto;
+    height: 468px;
+    width: 318px;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .project-banner5 {
+    background-image: url(../Images/Project-Image/JsProject/Calculator/Calculator-res.png);
+    margin: auto;
+    height: 468px;
+    width: 318px;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   .project-content-1 .project-button-1 {
     position: unset;
   }
   .project-content-2 .project-button-2 {
     position: unset;
   }
-  .project-content-3 .project-button-2 {
+  .project-content-3 .project-button-3 {
+    position: unset;
+  }
+  .project-content-4 .project-button-4 {
+    position: unset;
+  }
+  .project-content-5 .project-button-4 {
     position: unset;
   }
   #modal,
   #modal2,
-  #modal3 {
+  #modal3,
+  #modal4,
+  #modal5 {
     height: 1000px;
   }
   .modal-img {
@@ -582,22 +880,57 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+  .modal-img4 {
+    background-image: url(../Images/Project-Image/JsProject/Gallery/gallery-res.png);
+    margin: auto;
+    height: 468px;
+    width: 347px;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .modal-img5 {
+    background-image: url(../Images/Project-Image/JsProject/Calculator/Calculator-res.png);
+    margin: auto;
+    height: 468px;
+    width: 347px;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   .modal-img .tech {
     top: 50%;
+    right: 2%;
   }
   .modal-img .tech img {
     margin-top: auto;
   }
   .modal-img2 .tech {
     top: 50%;
+    right: 2%;
   }
   .modal-img2 .tech img {
     margin-top: auto;
   }
   .modal-img3 .tech {
     top: 50%;
+    right: 2%;
   }
   .modal-img3 .tech img {
+    margin-top: auto;
+  }
+  .modal-img4 .tech {
+    top: 50%;
+    right: 2%;
+  }
+  .modal-img4 .tech img {
+    margin-top: auto;
+  }
+  .modal-img5 .tech {
+    top: 50%;
+    right: 2%;
+  }
+  .modal-img5 .tech img {
     margin-top: auto;
   }
   .modal-href a {

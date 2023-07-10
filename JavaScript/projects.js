@@ -7,9 +7,7 @@ const modal = document.getElementById("modal");
 modalBtn.addEventListener("click", () => {
   modal.style.animation = "fadeIn 0.5s forwards";
   modal.style.display = "flex";
-  if ((modal.style.display = "flex")) {
-    modal2.style.display = "none";
-  }
+
   for (let i = 0; i < 2; i++) {
     borderElem[i].style.border = "none";
   }
@@ -33,9 +31,6 @@ const modal2 = document.getElementById("modal2");
 modalBtn2.addEventListener("click", () => {
   modal2.style.animation = "fadeIn 0.5s forwards";
   modal2.style.display = "flex";
-  if ((modal2.style.display = "flex")) {
-    modal.style.display = "none";
-  }
   for (let i = 1; i < 2; i++) {
     borderElem[i].style.border = "none";
   }
@@ -59,21 +54,58 @@ const modal3 = document.getElementById("modal3");
 modalBtn3.addEventListener("click", () => {
   modal3.style.animation = "fadeIn 0.5s forwards";
   modal3.style.display = "flex";
-  if ((modal3.style.display = "flex")) {
-    modal.style.display = "none";
-  }
   for (let i = 2; i < 3; i++) {
     borderElem[i].style.border = "none";
   }
 });
-
 modalX3.addEventListener("click", () => {
   modal3.style.animation = "fadeOut 0.5s forwards";
   for (let i = 2; i < 3; i++) {
     borderElem[i].style.border = "2px solid #393e46";
   }
-
   setTimeout(() => {
     modal3.style.display = "none";
+  }, 500);
+});
+// PROJECT - 4
+const modalBtn4 = document.getElementById("modalBtn4");
+const modalX4 = document.getElementById("modalX4");
+const modal4 = document.getElementById("modal4");
+modalBtn4.addEventListener("click", () => {
+  modal4.style.animation = "fadeIn 0.5s forwards";
+  modal4.style.display = "flex";
+  for (let i = 3; i < 4; i++) {
+    borderElem[i].style.border = "none";
+  }
+});
+modalX4.addEventListener("click", () => {
+  modal4.style.animation = "fadeOut 0.5s forwards";
+  for (let i = 3; i < 4; i++) {
+    borderElem[i].style.border = "2px solid #393e46";
+  }
+
+  setTimeout(() => {
+    modal4.style.display = "none";
+  }, 500);
+});
+// PROJECT - 5
+const modalBtn5 = document.getElementById("modalBtn5");
+const modalX5 = document.getElementById("modalX5");
+const modal5 = document.getElementById("modal5");
+modalBtn5.addEventListener("click", () => {
+  modal5.style.animation = "fadeIn 0.5s forwards";
+  modal5.style.display = "flex";
+  for (let i = 4; i < 5; i++) {
+    borderElem[i].style.border = "none";
+  }
+});
+modalX5.addEventListener("click", () => {
+  modal5.style.animation = "fadeOut 0.5s forwards";
+  for (let i = 4; i < 5; i++) {
+    borderElem[i].style.border = "2px solid #393e46";
+  }
+
+  setTimeout(() => {
+    modal5.style.display = "none";
   }, 500);
 });
