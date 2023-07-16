@@ -35,4 +35,12 @@ $(document).ready(function () {
 setTimeout(() => {
   let loader = document.getElementById("loader");
   loader.remove();
+  document.body.style.overflow = "visible";
+  // if (window.matchMedia("screen and (max-width: 768px)").matches) {
+  //   document.getElementById("ham").style.display = "block";
+  // }
 }, 3000);
+document.body.style.overflow = "hidden";
+// if (window.matchMedia("screen and (max-width: 768px)").matches) {
+//   document.getElementById("ham").style.display = "none";
+// }

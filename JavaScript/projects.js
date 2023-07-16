@@ -11,18 +11,7 @@ modalBtn.addEventListener("click", () => {
   for (let i = 0; i < 2; i++) {
     borderElem[i].style.border = "none";
   }
-
-  // modal3.style.display = "none";
-  // modal4.style.display = "none";
-  // modal5.style.display = "none";
-  // modal6.style.display = "none";
-  // if (modal3 || modal4 || modal5 || modal6) {
-  //   for (let i = 3; i < 6; i++) {
-  //     borderElem[i].style.border = "2px solid #393e46";
-  //   }
-  // }
 });
-
 modalX.addEventListener("click", () => {
   modal.style.animation = "fadeOut 0.5s forwards";
   for (let i = 0; i < 2; i++) {
@@ -44,16 +33,6 @@ modalBtn2.addEventListener("click", () => {
   for (let i = 1; i < 2; i++) {
     borderElem[i].style.border = "none";
   }
-  // modal.style.display = "none";
-  // modal3.style.display = "none";
-  // modal4.style.display = "none";
-  // modal5.style.display = "none";
-  // modal6.style.display = "none";
-  // if (modal || modal3 || modal4 || modal5 || modal6) {
-  //   for (let i = 0; i < 6; i++) {
-  //     borderElem[i].style.border = "2px solid #393e46";
-  //   }
-  // }
 });
 
 modalX2.addEventListener("click", () => {
@@ -77,16 +56,6 @@ modalBtn3.addEventListener("click", () => {
   for (let i = 2; i < 3; i++) {
     borderElem[i].style.border = "none";
   }
-  // modal.style.display = "none";
-  // modal2.style.display = "none";
-  // modal4.style.display = "none";
-  // modal5.style.display = "none";
-  // modal6.style.display = "none";
-  // if (modal || modal2 || modal4 || modal5 || modal6) {
-  //   for (let i = 0; i < 6; i++) {
-  //     borderElem[i].style.border = "2px solid #393e46";
-  //   }
-  // }
 });
 modalX3.addEventListener("click", () => {
   modal3.style.animation = "fadeOut 0.5s forwards";
@@ -107,16 +76,6 @@ modalBtn4.addEventListener("click", () => {
   for (let i = 3; i < 4; i++) {
     borderElem[i].style.border = "none";
   }
-  // modal.style.display = "none";
-  // modal2.style.display = "none";
-  // modal3.style.display = "none";
-  // modal5.style.display = "none";
-  // modal6.style.display = "none";
-  // if (modal || modal2 || modal3 || modal5 || modal6) {
-  //   for (let i = 0; i < 6; i++) {
-  //     borderElem[i].style.border = "2px solid #393e46";
-  //   }
-  // }
 });
 modalX4.addEventListener("click", () => {
   modal4.style.animation = "fadeOut 0.5s forwards";
@@ -138,16 +97,6 @@ modalBtn5.addEventListener("click", () => {
   for (let i = 4; i < 5; i++) {
     borderElem[i].style.border = "none";
   }
-  // modal.style.display = "none";
-  // modal2.style.display = "none";
-  // modal3.style.display = "none";
-  // modal4.style.display = "none";
-  // modal6.style.display = "none";
-  // if (modal || modal2 || modal3 || modal4 || modal6) {
-  //   for (let i = 0; i < 6; i++) {
-  //     borderElem[i].style.border = "2px solid #393e46";
-  //   }
-  // }
 });
 modalX5.addEventListener("click", () => {
   modal5.style.animation = "fadeOut 0.5s forwards";
@@ -169,16 +118,6 @@ modalBtn6.addEventListener("click", () => {
   for (let i = 5; i < 6; i++) {
     borderElem[i].style.border = "none";
   }
-  // modal.style.display = "none";
-  // modal2.style.display = "none";
-  // modal3.style.display = "none";
-  // modal4.style.display = "none";
-  // modal5.style.display = "none";
-  // if (modal || modal2 || modal3 || modal4 || modal5) {
-  //   for (let i = 0; i < 6; i++) {
-  //     borderElem[i].style.border = "2px solid #393e46";
-  //   }
-  // }
 });
 modalX6.addEventListener("click", () => {
   modal6.style.animation = "fadeOut 0.5s forwards";
@@ -188,5 +127,27 @@ modalX6.addEventListener("click", () => {
 
   setTimeout(() => {
     modal6.style.display = "none";
+  }, 500);
+});
+
+// PROJECT - 7
+const modalBtn7 = document.getElementById("modalBtn7");
+const modalX7 = document.getElementById("modalX7");
+const modal7 = document.getElementById("modal7");
+modalBtn7.addEventListener("click", () => {
+  modal7.style.animation = "fadeIn 0.5s forwards";
+  modal7.style.display = "flex";
+  for (let i = 6; i < 7; i++) {
+    borderElem[i].style.border = "none";
+  }
+});
+modalX7.addEventListener("click", () => {
+  modal7.style.animation = "fadeOut 0.5s forwards";
+  for (let i = 6; i < 7; i++) {
+    borderElem[i].style.border = "2px solid #393e46";
+  }
+
+  setTimeout(() => {
+    modal7.style.display = "none";
   }, 500);
 });

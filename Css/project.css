@@ -404,7 +404,7 @@
 .project-banner5:hover {
   background-size: 120% 120%;
 }
-/* PROJECT-4 */
+/* PROJECT-6 */
 .project-div-6 {
   position: relative;
   padding-top: 20px;
@@ -472,6 +472,75 @@
 }
 
 .project-banner6:hover {
+  background-size: 120% 120%;
+}
+/* PROJECT-7 */
+.project-div-7 {
+  position: relative;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+  background-color: #222831;
+  margin-bottom: 3rem;
+}
+.project-content-7 {
+  position: relative;
+  margin: 20px;
+  text-align: center;
+  height: auto;
+  border-radius: 10px;
+}
+.project-content-7 .project-title {
+  color: #eeeeee;
+  padding-bottom: 3%;
+}
+.project-content-7 .project-text {
+  color: #eeeeee;
+  padding-bottom: 13%;
+  width: 505px;
+  height: 120px;
+}
+.project-content-7 .project-button-7 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: auto;
+}
+.project-content-7 button {
+  transition: 0.3s ease;
+  text-decoration: none;
+  background-color: transparent;
+  border: #ffd369 solid 1px;
+  font-size: 18px;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  color: #ffd369;
+  border-radius: 8px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+.project-content-7 button:hover {
+  transform: scale(1.2);
+}
+.project-banner7 {
+  background-size: 100% 100%;
+  background-position: center;
+  background-image: url(../Images/Project-Image/JsProject/Validation/Validation.png);
+  width: 588px;
+  height: 350px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  border-radius: 10px;
+  transition: background-size 0.6s ease-in-out;
+}
+
+.project-banner7:hover {
   background-size: 120% 120%;
 }
 /* ANIMATION-MODAL */
@@ -732,6 +801,46 @@
   transition: background-size 0.6s ease-in-out;
 }
 
+/* modal project-7 */
+#modal7 {
+  z-index: 10;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 101%;
+  height: 835px;
+  display: flex;
+  justify-content: center;
+  display: none;
+  backdrop-filter: blur(10px);
+  background-color: #222831a9;
+}
+#modalX7 {
+  position: absolute;
+  right: 0;
+  border: none;
+  color: #ffd369;
+  border-left: 3px solid #ffd369;
+  border-bottom: 3px solid #ffd369;
+  background-color: #222831;
+  border-bottom-left-radius: 6px;
+  cursor: pointer;
+  z-index: 12;
+}
+
+.modal-img7 {
+  position: relative;
+  margin-right: 0px !important;
+  margin-bottom: 0px !important;
+  background-size: 100% 100%;
+  background-position: center;
+  background-image: url(../Images/Project-Image/JsProject/Validation/Validation.png);
+  width: auto;
+  height: 450px;
+  margin-bottom: 20px;
+  margin-right: 15px;
+  transition: background-size 0.6s ease-in-out;
+}
 .modal-img .tech {
   position: absolute;
   top: 40%;
@@ -768,6 +877,12 @@
   right: 1%;
   z-index: 12;
 }
+.modal-img7 .tech {
+  position: absolute;
+  top: 40%;
+  right: 1%;
+  z-index: 12;
+}
 .modal-img .tech img {
   margin-bottom: 20px;
   width: 25px;
@@ -794,6 +909,11 @@
   height: 25px;
 }
 .modal-img6 .tech img {
+  margin-bottom: 20px;
+  width: 25px;
+  height: 25px;
+}
+.modal-img7 .tech img {
   margin-bottom: 20px;
   width: 25px;
   height: 25px;
@@ -871,7 +991,8 @@
   .project-div-3,
   .project-div-4,
   .project-div-5,
-  .project-div-6 {
+  .project-div-6,
+  .project-div-7 {
     display: flex;
     flex-direction: column;
     width: auto;
@@ -909,6 +1030,12 @@
     height: auto;
   }
   .project-content-6 .project-text {
+    color: #eeeeee;
+    padding-bottom: 13%;
+    width: auto;
+    height: auto;
+  }
+  .project-content-7 .project-text {
     color: #eeeeee;
     padding-bottom: 13%;
     width: auto;
@@ -968,6 +1095,15 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+  .project-banner7 {
+    background-image: url(../Images/Project-Image/JsProject/Validation/Validation-res.png);
+    margin: auto;
+    height: 468px;
+    width: 318px;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   .project-content-1 .project-button-1 {
     position: unset;
   }
@@ -986,12 +1122,16 @@
   .project-content-6 .project-button-6 {
     position: unset;
   }
+  .project-content-7 .project-button-7 {
+    position: unset;
+  }
   #modal,
   #modal2,
   #modal3,
   #modal4,
   #modal5,
-  #modal6 {
+  #modal6,
+  #modal7 {
     height: 100%;
   }
   .modal-img {
@@ -1048,6 +1188,15 @@
     background-repeat: no-repeat !important;
     background-position: center;
   }
+  .modal-img7 {
+    background-image: url(../Images/Project-Image/JsProject/Validation/Validation-res.png);
+    margin: auto;
+    height: 468px;
+    width: 347px;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+    background-position: center;
+  }
   .modal-img .tech {
     top: 50%;
     right: 2%;
@@ -1088,6 +1237,13 @@
     right: 2%;
   }
   .modal-img6 .tech img {
+    margin-top: auto;
+  }
+  .modal-img7 .tech {
+    top: 50%;
+    right: 2%;
+  }
+  .modal-img7 .tech img {
     margin-top: auto;
   }
   .modal-href a {
