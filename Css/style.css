@@ -51,6 +51,9 @@ body {
   text-decoration: none;
   font-weight: 600;
 }
+.logo img {
+  width: 200px;
+}
 .dot {
   animation: color-change 5s infinite;
 }
@@ -365,7 +368,7 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 120vh;
+  height: 100vh;
   background: #222831;
   font-size: 2vmin;
   display: flex;
