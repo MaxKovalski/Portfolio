@@ -9,6 +9,7 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contact](#contact)
+- [Credit](#credit)
 
 ## Description
 
@@ -55,5 +56,10 @@ If you have any questions or would like to get in touch, you can reach me throug
 - Email: nobesko@gmail.com
 - LinkedIn: https://www.linkedin.com/in/maxim-kovalski/
 - GitHub: https://github.com/MaxKovalski
+
+## Credit
+
+- Some design elements were taken from [Freepik](https://www.freepik.com/).
+- thanks for inspiration to [CodePen](https://codepen.io/).
 
 Thank you for visiting my portfolio website!
