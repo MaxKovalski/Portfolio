@@ -4,7 +4,7 @@
 
 - [Description](#description)
 - [Features](#features)
-- [Project-Page](#Project-Page)
+- [Project-Page](#project-page)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
