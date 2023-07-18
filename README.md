@@ -4,6 +4,7 @@
 
 - [Description](#description)
 - [Features](#features)
+- [Project-Page](#Project-Page)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -20,11 +21,17 @@ This portfolio website is designed to display my personal projects, skills, and 
 - **Projects**: Showcases some of my projects. Each project is presented in a separate container, including a brief description and links to view the live demo, access the source code, and download the project.
 - **Contact**: Allows visitors to get in touch with me by filling out a contact form. The form requires their name, email, contact number (optional), and message. There are also social media icons for GitHub, LinkedIn, and WhatsApp to easily connect with me.
 
-## Projects Page
+## Project-Page
 
 That page show my all project in javascript module:
 
--**Todo List** -**Memory-Game** -**Snake-Game** -**OOP-Gallery** -**Calculator** -**Pokemon-Api** -**Israel-Validation**
+- **Todo List**
+- **Memory-Game**
+- **Snake-Game**
+- **OOP-Gallery**
+- **Calculator**
+- **Pokemon Api**
+- **Israel-Validation**
 
 ## Technologies Used
 
