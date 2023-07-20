@@ -19,20 +19,27 @@
     <script src="./JavaScript/projects.js" defer></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script defer src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://www.negishim.com/accessibility/accessibility_pro_group255.js" type="text/javascript"></script>
+<script type="text/javascript">
+    accessibility_rtl = false;
+    pixel_from_side = 20;
+    pixel_from_start = 100;
+</script>
 </head>
-
 <body>
     <!-- Home -->
     <div id="home">
         <header class="header">
             <a href="#home" class="logo"><img src="./Images/Logo/Color.png" alt=""></a>
-            <nav class="navbar">
+            <nav id="test" class="navbar">
                 <a href="#home">Home</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
             </nav>
-            <div id="ham" class="hamburger">
+            <div id="ham"  class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -53,7 +60,7 @@
                     succeed.
                 </p>
                 <div class="hire-me">
-                    <a style="margin-right: 20px;" href="./etc/מקסים קובלסקי.pdf" download="">Download CV</a>
+                    <a style="margin-right: 20px;" href="./etc/Maxim Kovalski.pdf" download="">Download CV</a>
                     <a  href="#contact">Let's Talk</a>
                 </div>
         </section>
@@ -136,6 +143,7 @@
 
         <div class="container">
           <!-- PROJECT-1 -->
+          <div data-aos="fade-down"   data-aos-duration="3000">
                 <div class="project-div-1 border-elem" >
                   <div class="project-content-1" >
                     <h3 class="project-title">Todo<span style="color: #ffd369;">-</span>List</h3>
@@ -151,6 +159,7 @@
                 </div>
                   <div class="project-banner1" >
                   </div>
+               
                   <!-- modal project-1 -->
                   <div id="modal">
                     <button id="modalX"><lottie-player src="./etc/slash.json" color="white" background="transparent"  speed="1"  style="width: 63px; height: 30px; "  loop  autoplay></lottie-player></button>
@@ -181,7 +190,9 @@
                     </div>
                   </div>
     </div>
+  </div>
     <!-- PROJECT-2 -->
+    <div data-aos="fade-right" data-aos-duration="2000">
     <div class="project-div-2 border-elem" >
       <div class="project-content-2" >
         <h3 class="project-title">Memory<span style="color: #ffd369;">-</span>Game</h3>
@@ -189,12 +200,13 @@
 
           The provided code represents a Memory Game project implemented using HTML, CSS, and JavaScript.The Memory Game is a classic card matching game where players need to find pairs of matching cards.        </p>
 <div class="project-button-2">
-    <button id="modalBtn2">Show More...</button>
+    <button id="modalBtn2" >Show More...</button>
       </div>
     </div>
       <div class="project-banner2" >
  
       </div>
+   
 <!-- modal project-2 -->
       <div id="modal2">
         <button id="modalX2"><lottie-player src="./etc/slash.json" color="white" background="transparent"  speed="1"  style="width: 63px; height: 30px; "  loop  autoplay></lottie-player></button>
@@ -223,7 +235,9 @@
         </div>
       </div>
     </div>
+  </div>
     <!-- PROJECT-3 -->
+    <div data-aos="fade-left" data-aos-duration="2000">
     <div class="project-div-3 border-elem" >
       <div class="project-content-3" >
         <h3 class="project-title">Snake<span style="color: #ffd369;">-</span>Game</h3>
@@ -236,6 +250,7 @@
       <div class="project-banner3" >
  
       </div>
+   
       <!-- modal project-3 -->
       <div id="modal3">
         <button id="modalX3"><lottie-player src="./etc/slash.json" color="white" background="transparent"  speed="1"  style="width: 63px; height: 30px; "  loop  autoplay></lottie-player></button>
@@ -264,7 +279,9 @@
         </div>
       </div>
 </div>
+</div>
   <!-- PROJECT-4 -->
+  <div data-aos="fade-up-right" data-aos-duration="2000">
   <div class="project-div-4 border-elem" >
     <div class="project-content-4" >
       <h3 class="project-title">OOP<span style="color: #ffd369;">-</span>Gallery</h3>
@@ -277,6 +294,7 @@
     <div class="project-banner4" >
 
     </div>
+
 <!-- modal project-4 -->
     <div id="modal4">
       <button id="modalX4"><lottie-player src="./etc/slash.json" color="white" background="transparent"  speed="1"  style="width: 63px; height: 30px; "  loop  autoplay></lottie-player></button>
@@ -306,7 +324,9 @@
       </div>
     </div>
   </div>
+</div>
       <!-- PROJECT-5 -->
+      <div data-aos="fade-up-left" data-aos-duration="2000">
       <div class="project-div-5 border-elem" >
         <div class="project-content-5" >
           <h3 class="project-title">Calculator</h3>
@@ -317,8 +337,8 @@
         </div>
       </div>
         <div class="project-banner5" >
-   
         </div>
+   
         <!-- modal project-5 -->
         <div id="modal5">
           <button id="modalX5"><lottie-player src="./etc/slash.json" color="white" background="transparent"  speed="1"  style="width: 63px; height: 30px; "  loop  autoplay></lottie-player></button>
@@ -347,7 +367,10 @@
           </div>
         </div>
   </div>
+</div>
   <!-- PROJECT-6 -->
+
+<div data-aos="fade-up-right" data-aos-duration="2000">
   <div class="project-div-6 border-elem" >
     <div class="project-content-6" >
       <h3 class="project-title">Pokemon<span style="color: #ffd369;">-</span>Api</h3>
@@ -360,6 +383,7 @@
     <div class="project-banner6" >
 
     </div>
+
 <!-- modal project-6 -->
     <div id="modal6">
       <button id="modalX6"><lottie-player src="./etc/slash.json" color="white" background="transparent"  speed="1"  style="width: 63px; height: 30px; "  loop  autoplay></lottie-player></button>
@@ -390,7 +414,10 @@
       </div>
     </div>
   </div>
-     <!-- PROJECT-5 -->
+</div>
+     <!-- PROJECT-7 -->
+    
+<div data-aos="fade-up" data-aos-duration="2000">
      <div class="project-div-7 border-elem" >
       <div class="project-content-7" >
         <h3 class="project-title">Israel<span style="color: #ffd369;">-</span>Validation</h3>
@@ -403,6 +430,7 @@
       <div class="project-banner7" >
  
       </div>
+  
       <!-- modal project-7 -->
       <div id="modal7">
         <button id="modalX7"><lottie-player src="./etc/slash.json" color="white" background="transparent"  speed="1"  style="width: 63px; height: 30px; "  loop  autoplay></lottie-player></button>
@@ -431,7 +459,9 @@
         </div>
       </div>
 </div>
+</div>
 </div> </div>
+
 <!-- Contact -->
 
 <div id="contact">
@@ -500,8 +530,6 @@
         </div>
       </div>
    
-
-
     <!-- Loader -->
     <div id="loader">
         <h1 style=color:#86bfd5>console<span style="color:white;">.<span class="test"
@@ -515,10 +543,17 @@
         <h1 class="closure">");</h1>
     </div>
     <!-- Loader -->
+
     <footer>
       <h4 class="footer-text">Made By &nbsp &nbsp &nbsp <a href="https://www.linkedin.com/in/maxim-kovalski/" target="_blank"><img src="./Images/Logo/Color.png" alt="LogoImage"></a> </h4>
       <h4 class="footer-text"><a href="https://www.freepik.com/free-vector/college-entrance-exam-concept-illustration_29808799.htm#query=test&position=1&from_view=search&track=sph">Image by storyset</a> on Freepik</h4>
     </footer>
+  
+    <script>
+AOS.init({
+  disable: 'phone',
+  once: true,
+});
+    </script>
 </body>
-
 </html>

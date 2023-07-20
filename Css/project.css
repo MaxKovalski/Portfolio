@@ -576,6 +576,7 @@
   justify-content: center;
   display: none;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   background-color: #222831a9;
 }
 #modalX {
@@ -610,6 +611,7 @@
   justify-content: center;
   display: none;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   background-color: #222831a9;
 }
 #modalX2 {
@@ -651,6 +653,7 @@
   justify-content: center;
   display: none;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   background-color: #222831a9;
 }
 #modalX3 {
@@ -691,6 +694,7 @@
   justify-content: center;
   display: none;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   background-color: #222831a9;
 }
 #modalX4 {
@@ -732,6 +736,7 @@
   justify-content: center;
   display: none;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   background-color: #222831a9;
 }
 #modalX5 {
@@ -772,6 +777,7 @@
   justify-content: center;
   display: none;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   background-color: #222831a9;
 }
 #modalX6 {
@@ -813,6 +819,7 @@
   justify-content: center;
   display: none;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   background-color: #222831a9;
 }
 #modalX7 {
@@ -1116,7 +1123,7 @@
   .project-content-4 .project-button-4 {
     position: unset;
   }
-  .project-content-5 .project-button-4 {
+  .project-content-5 .project-button-5 {
     position: unset;
   }
   .project-content-6 .project-button-6 {
@@ -1135,67 +1142,96 @@
     height: 100%;
   }
   .modal-img {
-    background-image: url(../Images/Project-Image/JsProject/Todo-Images/TodoListRes.png);
-    margin: auto;
-    height: 468px;
-    width: 347px;
-    background-size: 100% 100% !important;
-    background-repeat: no-repeat;
+    position: relative;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+    background-size: 100% 100%;
     background-position: center;
+    background-image: url(../Images/Project-Image/JsProject/Todo-Images/TodoListRes.png);
+    width: auto;
+    height: 450px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    transition: background-size 0.6s ease-in-out;
   }
   .modal-img2 {
-    background-image: url(../Images/Project-Image/JsProject/Memory-images/Memory-res.png);
-    margin: auto;
-    height: 468px;
-    width: 347px;
-    background-size: 100% 100% !important;
-    background-repeat: no-repeat;
+    position: relative;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+    background-size: 100% 100%;
     background-position: center;
+    background-image: url(../Images/Project-Image/JsProject/Memory-images/Memory-res.png);
+    width: auto;
+    height: 450px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    transition: background-size 0.6s ease-in-out;
   }
   .modal-img3 {
-    background-image: url(../Images/Project-Image/JsProject/Snake/Snake.png);
-    margin: auto;
-    height: 468px;
-    width: 347px;
-    background-size: 100% 100% !important;
-    background-repeat: no-repeat;
+    position: relative;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+    background-size: 100% 100%;
     background-position: center;
+    background-image: url(../Images/Project-Image/JsProject/Snake/Snake.png);
+    width: auto;
+    height: 450px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    transition: background-size 0.6s ease-in-out;
   }
   .modal-img4 {
+    position: relative;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+    background-size: 100% 100%;
+    background-position: center;
     background-image: url(../Images/Project-Image/JsProject/Gallery/gallery-res.png);
-    margin: auto;
-    height: 468px;
-    width: 347px;
-    background-size: 100% 100% !important;
-    background-repeat: no-repeat;
-    background-position: center;
+    width: auto;
+    height: 450px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    transition: background-size 0.6s ease-in-out;
   }
+
   .modal-img5 {
-    background-image: url(../Images/Project-Image/JsProject/Calculator/Calculator-res.png);
-    margin: auto;
-    height: 468px;
-    width: 347px;
-    background-size: 100% 100% !important;
-    background-repeat: no-repeat;
+    position: relative;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+    background-size: 100% 100%;
     background-position: center;
+    background-image: url(../Images/Project-Image/JsProject/Calculator/Calculator-res.png);
+    width: auto;
+    height: 450px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    transition: background-size 0.6s ease-in-out;
   }
   .modal-img6 {
-    background-image: url(../Images/Project-Image/JsProject/Pokemons/pokemons-res.png);
-    margin: auto;
-    height: 468px;
-    width: 347px;
-    background-size: 100% 100% !important;
-    background-repeat: no-repeat !important;
+    position: relative;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+    background-size: 100% 100%;
     background-position: center;
+    background-image: url(../Images/Project-Image/JsProject/Pokemons/pokemons-res.png);
+    width: auto;
+    height: 450px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    transition: background-size 0.6s ease-in-out;
   }
   .modal-img7 {
-    background-image: url(../Images/Project-Image/JsProject/Validation/Validation-res.png);
-    margin: auto;
-    height: 468px;
-    width: 347px;
-    background-size: 100% 100% !important;
-    background-repeat: no-repeat !important;
+    position: relative;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+    background-size: 100% 100%;
     background-position: center;
+    background-image: url(../Images/Project-Image/JsProject/Validation/Validation-res.png);
+    width: auto;
+    height: 450px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    transition: background-size 0.6s ease-in-out;
   }
   .modal-img .tech {
     top: 50%;

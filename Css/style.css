@@ -52,6 +52,7 @@ body {
   font-weight: 600;
 }
 .logo img {
+  margin-top: 15px;
   width: 200px;
 }
 .dot {
@@ -410,6 +411,7 @@ body {
     width: 100%;
     text-align: center;
     transition: 0.3s;
+    margin-top: 40px;
   }
   .navbar a {
     font-size: 30px;
@@ -420,6 +422,7 @@ body {
     height: 100%;
     left: 0;
     overflow: hidden !important;
+    margin-top: 40px;
   }
   .home {
     margin-top: 50px;

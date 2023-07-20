@@ -11,6 +11,7 @@ modalBtn.addEventListener("click", () => {
   for (let i = 0; i < 2; i++) {
     borderElem[i].style.border = "none";
   }
+  modal.scrollIntoView({ behavior: "smooth", block: scrollBlock });
 });
 modalX.addEventListener("click", () => {
   modal.style.animation = "fadeOut 0.5s forwards";
@@ -33,6 +34,7 @@ modalBtn2.addEventListener("click", () => {
   for (let i = 1; i < 2; i++) {
     borderElem[i].style.border = "none";
   }
+  modal2.scrollIntoView({ behavior: "smooth", block: scrollBlock });
 });
 
 modalX2.addEventListener("click", () => {
@@ -40,7 +42,6 @@ modalX2.addEventListener("click", () => {
   for (let i = 1; i < 2; i++) {
     borderElem[i].style.border = "2px solid #393e46";
   }
-
   setTimeout(() => {
     modal2.style.display = "none";
   }, 500);
@@ -56,6 +57,7 @@ modalBtn3.addEventListener("click", () => {
   for (let i = 2; i < 3; i++) {
     borderElem[i].style.border = "none";
   }
+  modal3.scrollIntoView({ behavior: "smooth", block: scrollBlock });
 });
 modalX3.addEventListener("click", () => {
   modal3.style.animation = "fadeOut 0.5s forwards";
@@ -76,6 +78,7 @@ modalBtn4.addEventListener("click", () => {
   for (let i = 3; i < 4; i++) {
     borderElem[i].style.border = "none";
   }
+  modal4.scrollIntoView({ behavior: "smooth", block: scrollBlock });
 });
 modalX4.addEventListener("click", () => {
   modal4.style.animation = "fadeOut 0.5s forwards";
@@ -97,6 +100,7 @@ modalBtn5.addEventListener("click", () => {
   for (let i = 4; i < 5; i++) {
     borderElem[i].style.border = "none";
   }
+  modal5.scrollIntoView({ behavior: "smooth", block: scrollBlock });
 });
 modalX5.addEventListener("click", () => {
   modal5.style.animation = "fadeOut 0.5s forwards";
@@ -118,6 +122,7 @@ modalBtn6.addEventListener("click", () => {
   for (let i = 5; i < 6; i++) {
     borderElem[i].style.border = "none";
   }
+  modal6.scrollIntoView({ behavior: "smooth", block: scrollBlock });
 });
 modalX6.addEventListener("click", () => {
   modal6.style.animation = "fadeOut 0.5s forwards";
@@ -140,14 +145,22 @@ modalBtn7.addEventListener("click", () => {
   for (let i = 6; i < 7; i++) {
     borderElem[i].style.border = "none";
   }
+  modal7.scrollIntoView({
+    behavior: "smooth",
+    block: scrollBlock,
+  });
 });
 modalX7.addEventListener("click", () => {
   modal7.style.animation = "fadeOut 0.5s forwards";
   for (let i = 6; i < 7; i++) {
     borderElem[i].style.border = "2px solid #393e46";
   }
-
   setTimeout(() => {
     modal7.style.display = "none";
   }, 500);
 });
+let scrollBlock = "center";
+let media = window.matchMedia("(max-width: 1920px)");
+if (media.matches) {
+  scrollBlock = "end";
+}
